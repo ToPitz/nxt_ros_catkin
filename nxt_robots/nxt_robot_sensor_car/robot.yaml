@@ -1,0 +1,37 @@
+nxt_robot:
+  - type: motor
+    name: r_wheel_joint
+    port: PORT_A
+    desired_frequency: 20.0
+
+  - type: motor
+    name: l_wheel_joint
+    port: PORT_B
+    desired_frequency: 20.0
+
+  - type: motor
+    name: m_wheel_joint
+    port: PORT_C
+    desired_frequency: 1.0
+
+  - type: gyro
+    name: gyro
+    frame_id: gyro_link
+    port: PORT_3
+    offset: 0
+    desired_frequency: 20.0
+
+  - type: ultrasonic
+    frame_id: ultrasonic_link
+    name: ultrasonic_sensor
+    port: PORT_2
+    spread_angle: 0.2
+    min_range: 0.01
+    max_range: 2.5
+    desired_frequency: 5.0
+
+  - type: color
+    frame_id: color_link
+    name: color_sensor
+    port: PORT_1
+    desired_frequency: 10.0

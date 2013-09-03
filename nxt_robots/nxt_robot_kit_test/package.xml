@@ -1,0 +1,35 @@
+<package>
+  <name>nxt_robot_kit_test</name>
+  <version>1.0.0</version>
+  <description>nxt_robot_kit_test provides a simple birkc with sensors attached to get a feel for ROS and NXT.</description>
+  <maintainer email="mwise@willowgarage.com">Melonee Wise</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nxt_robot_kit_test</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Melonee Wise</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>nxt_ros</build_depend>
+  <build_depend>nxt_msgs</build_depend>
+  <build_depend>nxt_description</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>nxt_ros</run_depend>
+  <run_depend>nxt_msgs</run_depend>
+  <run_depend>nxt_description</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>robot_state_publisher</test_depend> -->
+  <!-- <test_depend>nxt_ros</test_depend> -->
+  <!-- <test_depend>nxt_msgs</test_depend> -->
+  <!-- <test_depend>nxt_description</test_depend> -->
+
+</package>

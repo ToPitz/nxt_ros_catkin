@@ -1,0 +1,46 @@
+<package>
+  <name>nxt_ros</name>
+  <version>1.0.0</version>
+  <description>The nxt_ros package provides the bindings between the NXT world
+     and the ROS world.  This package will create a ROS topic for each
+     NXT sensor, and publish the sensor's data on this topic. The
+     package also creates a topic for each NXT motor, which allows you
+     to command the motor from ROS. The nxt_ros bindings talk directly
+     to the NXT brick, either over USB or over Bluetooth (note that
+     the Bluetooth connection is currently too slow to be very
+     useful).  Binding an NXT robot to ROS only requires a single
+     configuration file.</description>
+  <maintainer email="meeussen@willowgarage.com">Wim Meeussen</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nxt_ros</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Wim Meeussen</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rospy</build_depend>
+  <build_depend>nxt_python</build_depend>
+  <build_depend>kdl</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>nxt_msgs</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rospy</run_depend>
+  <run_depend>nxt_python</run_depend>
+  <run_depend>kdl</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>nxt_msgs</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>nxt_python</test_depend> -->
+  <!-- <test_depend>kdl</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>nxt_msgs</test_depend> -->
+
+</package>

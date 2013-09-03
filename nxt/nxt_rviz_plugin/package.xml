@@ -1,0 +1,39 @@
+<package>
+  <name>nxt_rviz_plugin</name>
+  <version>1.0.0</version>
+  <description>nxt_rviz_plugin provides plugins for rviz for visualizing data coming from the nxt sensors.</description>
+  <maintainer email="mwise@willowgarage.com">Melonee Wise</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nxt_rviz_plugin</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Melonee Wise</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rviz</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nxt_msgs</build_depend>
+  <build_depend>tf</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rviz</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>nxt_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rviz</test_depend> -->
+  <!-- <test_depend>roscpp</test_depend> -->
+  <!-- <test_depend>nxt_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+
+<export>
+    <rviz plugin="${prefix}/lib/nxt_rviz_plugin.yaml"/>
+</export>
+
+</package>

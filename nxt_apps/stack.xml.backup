@@ -1,0 +1,19 @@
+<stack>
+  <description brief="nxt_apps">
+
+    nxt_apps stack provides a set of common applications that can be run with the robots provided in the nxt_robot stack or 
+    other custom made robots. 
+
+  </description>
+  <author>Maintained by Tully Foote, Wim Meeussen, and Melonee Wise</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_apps</url>
+  <depend stack="common_msgs" /> <!-- geometry_msgs -->
+  <depend stack="joystick_drivers" /> <!-- joy -->
+  <depend stack="navigation" /> <!-- base_local_planner, costmap_2d -->
+  <depend stack="nxt" /> <!-- nxt_ros -->
+  <depend stack="nxt_robots" /> <!-- nxt_robot_gyro_car, nxt_robot_sensor_car -->
+  <depend stack="ros" />
+
+</stack>

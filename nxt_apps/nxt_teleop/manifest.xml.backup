@@ -1,0 +1,17 @@
+<package>
+  <description brief="nxt_teleop">
+
+     nxt_teleop provides keyboard and joystick interfaces for some of nxt robots provided in the nxt_robots stack.
+
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_teleop</url>
+  <depend package="nxt_ros"/>
+  <depend package="geometry_msgs"/>
+  <depend package="joy"/>
+
+</package>
+
+

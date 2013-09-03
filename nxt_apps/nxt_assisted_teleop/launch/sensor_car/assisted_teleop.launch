@@ -1,0 +1,31 @@
+<launch>
+
+  <!-- point cloud converter -->
+  <node pkg="nxt_assisted_teleop" type="range_to_pointcloud.py" name="range_to_pointcloud">
+    <remap from="range_topic" to="ultrasonic_sensor" />
+    <remap from="cloud_topic" to="point_cloud" />
+  </node>
+
+  <!-- joy node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="nxt_joy" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+    <param name="autorepeat_rate" value="10.0" />
+  </node>
+
+  <!-- teleop node -->
+  <node pkg="nxt_teleop" type="nxt_teleop_joy" name="nxt_teleop" output="screen">
+    <param name="axis_linear" value="3" type="int"/>
+    <param name="axis_angular" value="0" type="int"/>
+    <param name="axis_deadman" value="4" type="int"/>
+    <param name="scale_linear" value="1" type="double"/>
+    <param name="scale_angular" value="1" type="double"/>
+    <remap from="cmd_vel" to="teleop_cmd_vel"/>
+  </node>
+  
+  <node pkg="nxt_assisted_teleop" name="assisted_teleop" type="assisted_teleop" respawn="false" output="screen">
+    <rosparam file="$(find nxt_assisted_teleop)/launch/sensor_car/assisted_teleop.yaml" command="load" />
+  </node>
+
+</launch>

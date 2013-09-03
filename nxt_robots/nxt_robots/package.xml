@@ -1,0 +1,37 @@
+<package>
+  <name>nxt_robots</name>
+  <version>1.0.0</version>
+  <description>nxt_robots provides starter robots for using NXT with ROS.</description>
+  <maintainer email="tfoote@willowgarage.com">Tully Foote</maintainer>
+  <maintainer email="meeussen@willowgarage.com">Wim Meeussen</maintainer>
+  <maintainer email="mwise@willowgarage.com">Melonee Wise</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nxt_robots</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Tully Foote</author>
+  <author>Wim Meeussen</author>
+  <author>Melonee Wise</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>nxt_robot_gyro_car</run_depend>
+  <run_depend>nxt_robot_kit_test</run_depend>
+  <run_depend>nxt_robot_sensor_car</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+
+
+
+
+
+
+
+</package>

@@ -1,0 +1,19 @@
+<package>
+  <description brief="nxt_assisted_teleop">
+
+     nxt_assisted_teleop
+
+  </description>
+  <author>Wim Meeussen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_assisted_teleop</url>
+  <depend package="nxt_ros"/>
+  <depend package="nxt_robot_sensor_car"/>
+  <depend package="nxt_robot_gyro_car"/>
+  <depend package="costmap_2d"/>
+  <depend package="base_local_planner"/>
+
+</package>
+
+

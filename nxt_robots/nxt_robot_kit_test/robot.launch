@@ -1,0 +1,12 @@
+<launch>
+  <param name="robot_description" textfile="$(find nxt_robot_kit_test)/robot.urdf"/>  
+  
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+    <param name="publish_frequency" value="100.0"/>
+  </node>
+  <node pkg="nxt_ros" type="nxt_ros.py" name="nxt_ros" output="screen" respawn="true">
+    <rosparam command="load" file="$(find nxt_robot_kit_test)/robot.yaml" />
+  </node>
+  <node pkg="nxt_ros" type="joint_states_aggregator.py" name="joint_state_publisher" output="screen" />
+
+</launch>

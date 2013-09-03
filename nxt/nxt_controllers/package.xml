@@ -1,0 +1,51 @@
+<package>
+  <name>nxt_controllers</name>
+  <version>1.0.0</version>
+  <description>The nxt_controllers package provides a number of Python-based
+     controllers for two-wheeled diff drive robots. The base
+     controllers allows you to send velocity commands to a diff drive
+     base, while the base odometry tracks the pose of a diff drive
+     robot. The nxt_controllers package also contains a general
+     purpose joint position controller that commnads a joint to a
+     desired position by sending effort commands to the joint and
+     reading the joint encoders.</description>
+  <maintainer email="meeussen@willowgarage.com">Wim Meeussen</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nxt_controllers</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Wim Meeussen</author>
+
+  <!-- Dependencies which this package needs to build itself. -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Dependencies needed to compile this package. -->
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>nxt_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>kdl</build_depend>
+
+  <!-- Dependencies needed after this package is compiled. -->
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>tf_conversions</run_depend>
+  <run_depend>nxt_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>kdl</run_depend>
+
+  <!-- Dependencies needed only for running tests. -->
+  <!-- <test_depend>rospy</test_depend> -->
+  <!-- <test_depend>sensor_msgs</test_depend> -->
+  <!-- <test_depend>tf</test_depend> -->
+  <!-- <test_depend>tf_conversions</test_depend> -->
+  <!-- <test_depend>nxt_msgs</test_depend> -->
+  <!-- <test_depend>nav_msgs</test_depend> -->
+  <!-- <test_depend>kdl</test_depend> -->
+
+</package>

@@ -1,0 +1,27 @@
+<package>
+  <description brief="nxt_robot_sensor_car">
+
+     The nxt_robot_sensor_car package provides a nxt robot with four sensors. For instructions on building
+     the nxt robot load the sensor_car.lxf into the LEGO Digital Designer
+     <a href="http://ldd.lego.com/">(ldd.lego.com)</a> and select the building guide mode. This robot
+     uses the <a href="http://mindstorms.lego.com/en-us/Products/Ultrasonic+Sensor/9846.aspx"> nxt lego ultrasonic sensor</a>,
+     the <a href="http://www.ldraw.org/cgi-bin/ptdetail.cgi?f=parts/64892.dat"> nxt lego color sensor</a>,
+     the <a href="http://www.hitechnic.com/cgi-bin/commerce.cgi?preadd=action&amp;key=NGY1044"> hitechnic gryo sensor</a>,
+     and the <a href="http://www.hitechnic.com/cgi-bin/commerce.cgi?preadd=action&amp;key=NAC1040"> hitechnic acclerometer sensor</a>.
+
+
+  </description>
+  <author>Melonee Wise</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_robot_sensor_car</url>
+  <depend package="nxt_ros"/>
+  <depend package="nxt_controllers"/>
+  <depend package="robot_pose_ekf"/>
+  <depend package="nxt_description" />
+  <depend package="robot_state_publisher" />
+
+
+</package>
+
+

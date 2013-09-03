@@ -1,0 +1,19 @@
+<package>
+  <description brief="nxt_robot_kit_test">
+
+     nxt_robot_kit_test provides a simple birkc with sensors attached to get a feel for ROS and NXT.
+
+  </description>
+  <author>Melonee Wise</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/nxt_robot_kit_test</url>
+
+  <depend package="robot_state_publisher" />
+  <depend package="nxt_ros" />
+  <depend package="nxt_msgs" />
+  <depend package="nxt_description" />
+
+</package>
+
+
